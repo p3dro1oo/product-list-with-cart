@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(20, 50%, 98%);
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    object-fit: cover;
+    
+}
+.main_title{
+    font-size: 2em;
+    font-weight: 700;
+    align-self: flex-start;
+    margin-left: 2em;
+    
+}
+
+img{
+    width: 20em;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.cardapio{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.product{
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em 0 1em 0;
+}	
+
+
+.add_cart_btn{
+    width: 12em;
+    height: 5em;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgb(134, 134, 134);
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    bottom: 1em;
+}
+
+.description_product{
+font-weight: 300;
+font-size: 14px;
+}
+
+.product_title{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.product_value{
+    font-weight: 600;
+    color: hsl(14, 86%, 42%);
+}
+
+.cart_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.cart_title{
+    font-size: 2em;
+    font-weight: 700;
+    align-self: flex-start;
+    margin-left: 2em;
+    color: hsl(14, 86%, 42%);
+}
+
+/* Responsividade para dispositivos móveis */
+@media (min-width: 1047px) {
+    .cardapio {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de largura igual */
+        gap: 20px; /* Espaço entre os itens */
+        padding: 20px;
+    }
+
+
+body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+  .cart_section{
+    width: 20em;
+    margin-left: 5em;
+    margin-top: 5em;
+    
+}
+main{
+    margin-left: 3em;
+}
+}
+
+@media (min-width: 1700px) {
+    .cardapio {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de largura igual */
+        gap: 20px; /* Espaço entre os itens */
+        padding: 20px;
+    }
+
+
+body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+  .cart_section{
+    width: 20em;
+    margin-left: 5em;
+    margin-top: 5em;
+    
+}
+main{
+    margin-left: 16em;
+}
+}
